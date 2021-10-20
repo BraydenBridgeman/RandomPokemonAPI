@@ -1,0 +1,89 @@
+html, body {
+    font: sans-serif;
+    height: 100%;
+    background-image: url("./Assets/Pokemon\ Background.png");
+    background-color: #ffffff;
+}
+
+#logo {
+    display: block;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pokeSprite {
+    display: block;
+    height: 325px;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: pokeSpriteAnimation;
+    position: relative;
+    animation: pokeMove 7s infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+  
+@keyframes pokeSpriteAnimation {
+    {animation-timing-function: ease-in-out;}
+}
+
+@keyframes pokeMove {
+    from {right: -700px;}
+    to {right: 700px;}
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    text-shadow: 0 0 3px #2a75bb, 0 0 5px #ffcb05;
+}
+
+.wrapper {
+    height: 200px;
+    position: relative;
+}
+  
+.pokemonControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #ffcb05;
+    border-radius: 15px;
+    color: #2a75bb;
+    padding: 20px 20px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s
+}
+
+.button:hover {
+    background-color: #2a75bb;
+    color: white;
+}
+
+.button:active {
+    background-color: #2a75bb;
+    box-shadow: 0 5px black;
+    transform: translateY(5px);
+}
+
+img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
